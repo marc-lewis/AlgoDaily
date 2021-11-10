@@ -1,7 +1,13 @@
-import { reverseString } from './reverseString';
+import { reverseStringOnePointer, reverseStringTwoPointers } from './reverseString';
 
-describe("reverseString", () => {
+describe("reverseStringOnePointer", () => {
   it("should return 'ekaj' for 'jake'", () => {
-    expect(reverseString("jake")).toBe("ekaj");
+    expect(reverseStringOnePointer("jake")).toBe("ekaj");
   });
 });
+
+describe("reverseStringTwoPointers", () => {
+  it("should return 'ekaj' for 'jake'", () => {
+    expect(reverseStringTwoPointers("jake")).toBe("ekaj");
+  });
+})
