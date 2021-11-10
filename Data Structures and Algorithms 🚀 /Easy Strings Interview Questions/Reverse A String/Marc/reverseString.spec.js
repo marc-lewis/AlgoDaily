@@ -1,21 +1,37 @@
 import { reverseStringOnePointer, reverseStringTwoPointers } from './reverseString';
 
 describe("reverseStringOnePointer", () => {
-  it("should reverse even length words", () => {
-    expect(reverseStringOnePointer("jake")).toBe("ekaj");
+  it("'njnschnjkdasn j32 uida' should return 'adiu 23j nsadkjnhcsnjn'", () => {
+    expect(reverseStringOnePointer("njnschnjkdasn j32 uida")).toBe("adiu 23j nsadkjnhcsnjn");
   });
 
-  it("should reverse odd length words", () => {
-    expect(reverseStringOnePointer("jakes")).toBe("sekaj");
+  it("'timbuktu12' should return '21utkubmit'", () => {
+    expect(reverseStringOnePointer("timbuktu12")).toBe("21utkubmit");
+  });
+
+  it("'' should return ''", () => {
+    expect(reverseStringOnePointer("")).toBe("");
+  });
+
+  it("'reverseastring' should return 'gnirtsaesrever'", () => {
+    expect(reverseStringOnePointer("reverseastring")).toBe("gnirtsaesrever");
   });
 });
 
 describe("reverseStringTwoPointers", () => {
-  it("should reverse even length words", () => {
-    expect(reverseStringTwoPointers("jake")).toBe("ekaj");
+  it("'njnschnjkdasn j32 uida' should return 'adiu 23j nsadkjnhcsnjn'", () => {
+    expect(reverseStringTwoPointers("njnschnjkdasn j32 uida")).toBe("adiu 23j nsadkjnhcsnjn");
   });
 
-  it("should reverse odd length words", () => {
-    expect(reverseStringTwoPointers("jakes")).toBe("sekaj");
+  it("'timbuktu12' should return '21utkubmit'", () => {
+    expect(reverseStringTwoPointers("timbuktu12")).toBe("21utkubmit");
+  });
+
+  it("'' should return ''", () => {
+    expect(reverseStringTwoPointers("")).toBe("");
+  });
+
+  it("'reverseastring' should return 'gnirtsaesrever'", () => {
+    expect(reverseStringTwoPointers("reverseastring")).toBe("gnirtsaesrever");
   });
 });
