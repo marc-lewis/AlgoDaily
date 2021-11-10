@@ -17,10 +17,10 @@ export function reverseStringOnePointer(str) {
  * @returns {string}
  */
 export function reverseStringTwoPointers(str) {
-  let reversedString = [];
+  let reversedString = str.split();
   let head = 0;
   let tail = str.length - 1;
-  while(head < tail) {
+  while(head <= tail) {
     reversedString[head] = str[tail];
     reversedString[tail] = str[head];
     tail--;
