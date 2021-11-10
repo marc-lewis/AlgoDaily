@@ -29,26 +29,26 @@ const string = "Steven Universe";
 
 
 // // Improved Version
-// const reverseString2 = string => {
-//   console.log(`string to reverse = ${string}`);
+export const reverseString2 = string => {
+  console.log(`string to reverse = ${string}`);
 
-//   const array = Array.from(string);
-//   const length = array.length;
-//   let newString ='';
+  const array = Array.from(string);
+  const length = array.length;
+  let newString ='';
   
-//   for (let i = 0; i < length; ++i) {
-//     let element = array.pop()
-//     newString = newString + element;
-//   }
+  for (let i = 0; i < length; ++i) {
+    let element = array.pop()
+    newString = newString + element;
+  }
 
-//   return newString;
+  return newString;
   
-// }
+}
 
 // console.log(`reversed string = ${reverseString2(string)}`);
 
 // Two Pointer Technique
-const reverseString3 = string => {
+export const reverseString3 = string => {
   console.log(`string to reverse = ${string}`);
 
   let stringArray = string.split("");
@@ -62,6 +62,8 @@ const reverseString3 = string => {
     start++;
     end--;
   }
+
+  return stringArray.join("");
 }
 
-console.log(`reversed string = ${reverseString3(string)}`);
+// console.log(`reversed string = ${reverseString3(string)}`);
