@@ -1,6 +1,6 @@
 import { reverseString2, reverseString3 } from './reverseString';
 
-describe("reverseStringOnePointer", () => {
+describe("reverseString2", () => {
   it("'njnschnjkdasn j32 uida' should return 'adiu 23j nsadkjnhcsnjn'", () => {
     expect(reverseString2("njnschnjkdasn j32 uida")).toBe("adiu 23j nsadkjnhcsnjn");
   });
@@ -18,7 +18,7 @@ describe("reverseStringOnePointer", () => {
   });
 });
 
-describe("reverseStringTwoPointers", () => {
+describe("reverseString3", () => {
   it("'njnschnjkdasn j32 uida' should return 'adiu 23j nsadkjnhcsnjn'", () => {
     expect(reverseString3("njnschnjkdasn j32 uida")).toBe("adiu 23j nsadkjnhcsnjn");
   });
