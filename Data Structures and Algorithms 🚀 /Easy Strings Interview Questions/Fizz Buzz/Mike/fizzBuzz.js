@@ -1,8 +1,23 @@
+/**
+ * @param {int} int
+ * @returns {string}
+ */
 
-
-// FIZZBUZZ: take an array of numbers and return fizz if a multiple of three, buzz if a multiple of five, and fizzbuzz if a mutliple of both. 
-// i.e 6 = fizz, 10 = buzz, 30 = fizzbuzz.
-
-export function fizzBuzz(array) {
-
+export function fizzBuzz(n) {
+  let array = [];
+  for (let i = 1; i <= n; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+      array.push("fizzbuzz");
+    } else if (i % 5 === 0 ) {
+      array.push("buzz");
+    } else if (i % 3 === 0 ) {
+      array.push("fizz");
+    } else {
+      array.push(i.toString());
+    }
+  }
+  
+  return array.join("");
 }
+
+// console.log(fizzBuzz(15));
