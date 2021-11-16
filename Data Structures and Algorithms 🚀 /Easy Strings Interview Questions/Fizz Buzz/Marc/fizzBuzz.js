@@ -1,5 +1,6 @@
 /**
  * The old classic!
+ * (Marc's solution)
  * @param {int} int
  * @returns {string}
  */

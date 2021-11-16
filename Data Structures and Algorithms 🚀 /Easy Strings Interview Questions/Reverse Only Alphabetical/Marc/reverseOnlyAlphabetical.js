@@ -1,5 +1,6 @@
 /**
  * Reverse only alphabetical parts of string
+ * (Marc's solution)
  * @param {string} string
  * @returns string
  */
@@ -24,8 +25,8 @@
 }
 
 /**
- * The two pointer only method modified from the second example
  * Reverse only alphabetical parts of string
+ * (Algo daily solution)
  * @param {string} string
  * @returns string
  */
