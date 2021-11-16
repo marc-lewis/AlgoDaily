@@ -22,3 +22,28 @@
   }
   return reversedStringChars.join('');
 }
+
+/**
+ * The two pointer only method modified from the second example
+ * @param {string} string
+ * @returns string
+ */
+export function reverseOnlyAlphabetical2PointerOnly(string) {
+  const reversedString = string.split('');
+  let head = 0;
+  let tail = string.length - 1;
+  let alphaRegex = /[a-z]/i;
+  while(head < tail) {
+    if(!alphaRegex.test(string[head])) {
+      head++;
+    } else if (!alphaRegex.test(string[tail])) {
+      tail--;
+    } else {
+      reversedString[head] = string[tail];
+      reversedString[tail] = string[head];
+      head++;
+      tail--;
+    }
+  }
+  return reversedString.join('');
+}
