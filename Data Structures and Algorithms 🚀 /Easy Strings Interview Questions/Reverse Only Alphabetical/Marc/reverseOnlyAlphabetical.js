@@ -25,6 +25,7 @@
 
 /**
  * The two pointer only method modified from the second example
+ * Reverse only alphabetical parts of string
  * @param {string} string
  * @returns string
  */
