@@ -1,5 +1,5 @@
 /**
- * Take an Array and return the element that is in the majority
+ * Take a number and return true if it's a power of 3
  * @param {number} num
  * @return {Boolean}
  */
