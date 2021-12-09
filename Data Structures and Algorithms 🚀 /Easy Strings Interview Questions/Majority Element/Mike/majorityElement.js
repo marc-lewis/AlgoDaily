@@ -7,12 +7,12 @@
 //First Version [Not O(n) but O(n^2)]
 export const majorityElement = nums => {
   const mySet = new Set();
-  for (let element of nums) {
+  for (const element of nums) {
     mySet.add(element);  
   }
-  for (let element of mySet) {
+  for (const element of mySet) {
     let tempNums = [];
-    for (let num of nums) {
+    for (const num of nums) {
     if (element === num) tempNums.push(num);
     }
     if (tempNums.length > nums.length/2)
