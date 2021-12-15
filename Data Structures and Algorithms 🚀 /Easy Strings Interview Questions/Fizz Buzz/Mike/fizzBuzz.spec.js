@@ -1,37 +1,15 @@
-import { fizzBuzz } from './fizzBuzz';
+import { fizzBuzz } from "./fizzBuzz";
 
-// describe("reverseString2", () => {
-//   it("'njnschnjkdasn j32 uida' should return 'adiu 23j nsadkjnhcsnjn'", () => {
-//     expect(reverseString2("njnschnjkdasn j32 uida")).toBe("adiu 23j nsadkjnhcsnjn");
-//   });
+describe("fizzBuzz", () => {
+  it("should return '' for 0", () => {
+    expect(fizzBuzz(0)).toBe("");
+  });
 
-//   it("'timbuktu12' should return '21utkubmit'", () => {
-//     expect(reverseString2("timbuktu12")).toBe("21utkubmit");
-//   });
+  it("should return '1' for 1", () => {
+    expect(fizzBuzz(1)).toBe("1");
+  });
 
-//   it("'' should return ''", () => {
-//     expect(reverseString2("")).toBe("");
-//   });
-
-//   it("'reverseastring' should return 'gnirtsaesrever'", () => {
-//     expect(reverseString2("reverseastring")).toBe("gnirtsaesrever");
-//   });
-// });
-
-// describe("reverseString3", () => {
-//   it("'njnschnjkdasn j32 uida' should return 'adiu 23j nsadkjnhcsnjn'", () => {
-//     expect(reverseString3("njnschnjkdasn j32 uida")).toBe("adiu 23j nsadkjnhcsnjn");
-//   });
-
-//   it("'timbuktu12' should return '21utkubmit'", () => {
-//     expect(reverseString3("timbuktu12")).toBe("21utkubmit");
-//   });
-
-//   it("'' should return ''", () => {
-//     expect(reverseString3("")).toBe("");
-//   });
-
-//   it("'reverseastring' should return 'gnirtsaesrever'", () => {
-//     expect(reverseString3("reverseastring")).toBe("gnirtsaesrever");
-//   });
-// });
+  it("should return '12fizz4buzzfizz78fizzbuzz11fizz1314fizzbuzz' for 15", () => {
+    expect(fizzBuzz(15)).toBe("12fizz4buzzfizz78fizzbuzz11fizz1314fizzbuzz");
+  });
+});

@@ -1,5 +1,6 @@
 /**
  * Reverse a string using a single pointer
+ * (Marc's solution)
  * @param {string} str
  * @returns {string}
  */
@@ -13,6 +14,7 @@ export function reverseStringOnePointer(str) {
 
 /**
  * Reverse a string using the two pointer technique
+ * (AlgoDaily solution #2)
  * @param {string} str
  * @returns {string}
  */
