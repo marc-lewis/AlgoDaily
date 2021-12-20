@@ -1,21 +1,22 @@
 /** 
  * Take an array of numbers and return the number with only one instance
- * @param {number} num
+ * @param {Array} numbers
  * @return {Boolean}
 */
 
-function lonelyNumber(numbers) {
+export function lonelyNumber(numbers) {
   const sortedNumbers = numbers.sort();
-  console.log(sortedNumbers);
   if (sortedNumbers.length === 1) {
-    return sortedNumbers;
+    return sortedNumbers.pop();
   }
   for (let number in sortedNumbers) {
-    console.log(number);
     if (sortedNumbers[number] === sortedNumbers[number++]) {
       sortedNumbers.shift();
       sortedNumbers.shift();
     }
   }
-  return sortedNumbers;
+  return sortedNumbers.pop();
 }
+
+const array = [1];
+console.log(lonelyNumber(array));
