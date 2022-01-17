@@ -1,7 +1,3 @@
-console.log("ok, you got this.");
-
-const string = "Steven Universe";
-
 
 //My First version
 
@@ -30,7 +26,6 @@ const string = "Steven Universe";
 
 // // Improved Version
 export const reverseString2 = string => {
-  console.log(`string to reverse = ${string}`);
 
   const array = Array.from(string);
   const length = array.length;
@@ -49,7 +44,6 @@ export const reverseString2 = string => {
 
 // Two Pointer Technique
 export const reverseString3 = string => {
-  console.log(`string to reverse = ${string}`);
 
   let stringArray = string.split("");
   let start = 0;
