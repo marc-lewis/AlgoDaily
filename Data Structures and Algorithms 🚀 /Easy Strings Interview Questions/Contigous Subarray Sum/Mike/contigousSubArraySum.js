@@ -28,6 +28,16 @@ export const subarraySum = (nums, n) => {
 }
 
 // Their Solution - using Hashmaps!
+/* 
+So this works by creating a hashmap (an object) and adding up the array. 
+first you add the number to the currect cum or toal (starts at 0) then 
+you check to see if the target number minus the sum is equal to any of 
+the stored numbers. 
+By doing this you are working out that the sum of part A of the array, 
+minus part B of the array, is equal to a part of the array, 
+which if equal to the target means part of the array, or a subarray, 
+adds up to the target! 
+*/
 // function subarraySum(nums, n) {
 //   let sumsMap = { 0: 1 }; // hash of prefix sums
 //   let sum = 0;
